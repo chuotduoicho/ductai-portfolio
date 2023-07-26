@@ -18,6 +18,8 @@ import {
   meta,
   starbucks,
   tesla,
+  fpt,
+  vbee,
   shopify,
   carrent,
   jobit,
@@ -46,15 +48,15 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "ReactJs Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "NodeJs Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Database Developer",
     icon: creator,
   },
 ];
@@ -116,57 +118,57 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
+    title: "Java Web Developer",
+    company_name: "FPT Software",
+    icon: fpt,
+    iconBg: "#E6DEDD",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing web applications using Java and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Fullstack Developer",
+    company_name: "Vbee",
+    icon: vbee,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "September 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications using React.js, NodeJS and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  // {
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: shopify,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
+  // {
+  //   title: "Full stack Developer",
+  //   company_name: "Meta",
+  //   icon: meta,
+  //   iconBg: "#E6DEDD",
+  //   date: "Jan 2023 - Present",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
+  // },
 ];
 
 const testimonials = [
@@ -262,4 +264,44 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const certificate = [
+  {
+    name: "Project Management Principles and Practices",
+    organization: "Coursera",
+    date: "February 20, 2022",
+    link: "https://coursera.org/share/9be1c0bf897f4ad08f48b022cbac20e9",
+  },
+  {
+    name: "CertNexus Certified Ethical Emerging Technologist",
+    organization: "Coursera",
+    date: "July 6, 2022",
+    link: "https://coursera.org/share/dbcbbfd9abb6bbdac257c37d02e68d2f",
+  },
+  {
+    name: "Web Design for Everybody: Basics of Web Development & Coding Specialization",
+    organization: "Coursera",
+    date: "April 22, 2020",
+    link: "https://coursera.org/share/0f76aa3b44d27dfaf947aae2aaaacb16",
+  },
+  {
+    name: "Computer Communications",
+    organization: "Coursera",
+    date: "November 26, 2020",
+    link: "https://coursera.org/share/de009465afe8a2dd3f4a0e98888951e6",
+  },
+  {
+    name: "Startup Entrepreneurship",
+    organization: "Coursera",
+    date: "August 13, 2020",
+    link: "https://coursera.org/share/ff335144911452741d5a59851a85b91e",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  certificate,
+};
