@@ -32,6 +32,11 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import blog from "./project/blog.png";
+import ailatrieuphu from "./project/ai-la-trieu-phu.png";
+import oantuti from "./project/oan-tu-ti.png";
+import quiz from "./project/quiz.png";
+
 export {
   logo,
   backend,
@@ -63,4 +68,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  blog,
+  ailatrieuphu,
+  oantuti,
+  quiz,
 };

@@ -25,6 +25,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  blog,
+  ailatrieuphu,
+  oantuti,
+  quiz
 } from "../assets";
 
 export const navLinks = [
@@ -216,9 +220,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "My blog",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A personal space to share thoughts, experiences, and passions. Dive into a diverse range of topics, from technology to travel, and discover captivating stories.",
     tags: [
       {
         name: "react",
@@ -229,54 +233,75 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "node",
         color: "pink-text-gradient",
       },
+      {
+        name: "express",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: blog,
+    source_code_link: "https://github.com/chuotduoicho/blog-FE",
+    website_link:"https://ductai-blog-a0d36.web.app/"
   },
   {
-    name: "Job IT",
+    name: "Quiz app",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Interactive platform for quizzes & tests. Offers diverse question formats, score tracking, time limits & result display. Engaging learning experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "typeScript",
         color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: quiz,
+    source_code_link: "https://github.com/chuotduoicho/react-quiz",
+    website_link:"https://ductai-quiz-app.web.app/"
   },
   {
-    name: "Trip Guide",
+    name: "Oan tu ti",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Exciting adventure in solving enigmatic puzzles, riddles, and challenges. Engage your mind and unravel mysteries to progress through immersive levels.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: oantuti,
+    source_code_link: "https://github.com/chuotduoicho/React-khoa2",
+    website_link:"https://ductai-khoa2-oantuxi.web.app/"
+  },
+  {
+    name: "Ai la trieu phu",
+    description:
+      "Classic quiz game inspired by the popular TV show. Test your knowledge, answer trivia questions of increasing difficulty, and aim to win the grand prize.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "useSound",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: ailatrieuphu,
+    source_code_link: "https://github.com/chuotduoicho/ailatrieuphu",
+    website_link:"https://ductai-ailatrieuphu.web.app/"
   },
 ];
 
