@@ -28,7 +28,11 @@ import {
   blog,
   ailatrieuphu,
   oantuti,
-  quiz
+  quiz,
+  projectmanagement,
+  certnexus,
+  startup,computercommunication,
+  webdesign
 } from "../assets";
 
 export const navLinks = [
@@ -308,30 +312,35 @@ const projects = [
 const certificate = [
   {
     name: "Project Management Principles and Practices",
+    image: projectmanagement,
     organization: "Coursera",
     date: "February 20, 2022",
     link: "https://coursera.org/share/9be1c0bf897f4ad08f48b022cbac20e9",
   },
   {
     name: "CertNexus Certified Ethical Emerging Technologist",
+    image: certnexus,
     organization: "Coursera",
     date: "July 6, 2022",
     link: "https://coursera.org/share/dbcbbfd9abb6bbdac257c37d02e68d2f",
   },
   {
     name: "Web Design for Everybody: Basics of Web Development & Coding Specialization",
+    image: webdesign,
     organization: "Coursera",
     date: "April 22, 2020",
     link: "https://coursera.org/share/0f76aa3b44d27dfaf947aae2aaaacb16",
   },
   {
     name: "Computer Communications",
+    image: computercommunication,
     organization: "Coursera",
     date: "November 26, 2020",
     link: "https://coursera.org/share/de009465afe8a2dd3f4a0e98888951e6",
   },
   {
     name: "Startup Entrepreneurship",
+    image: startup,
     organization: "Coursera",
     date: "August 13, 2020",
     link: "https://coursera.org/share/ff335144911452741d5a59851a85b91e",

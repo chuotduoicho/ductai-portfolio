@@ -37,7 +37,18 @@ import ailatrieuphu from "./project/ai-la-trieu-phu.png";
 import oantuti from "./project/oan-tu-ti.png";
 import quiz from "./project/quiz.png";
 
+import projectmanagement from "./certificate/project-management.jpeg";
+import certnexus from "./certificate/cert-nexus.jpeg";
+import computercommunication from "./certificate/computer-communication.jpeg";
+import startup from "./certificate/startup.jpeg";
+import webdesign from "./certificate/web-design.jpeg";
+
 export {
+  projectmanagement,
+  certnexus,
+  computercommunication,
+  startup,
+  webdesign,
   logo,
   backend,
   creator,

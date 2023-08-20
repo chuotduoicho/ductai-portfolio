@@ -9,11 +9,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-const FeedbackCard = ({ index, name, date,link }) => (
+const FeedbackCard = ({ index, name, date,link,image }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
   >
+       <img
+          src={image}
+          alt="certificate logo"
+          className="object-contain rounded-xl transition-transform transform hover:scale-110"
+        />
     <p className="text-white font-black text-[48px]">"</p>
 
     <div className="mt-1">
