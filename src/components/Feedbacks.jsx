@@ -19,9 +19,9 @@ const FeedbackCard = ({ index, name, date,link,image }) => (
           alt="certificate logo"
           className="object-contain rounded-xl transition-transform transform hover:scale-110"
         />
-    <p className="text-white font-black text-[48px]">"</p>
+    {/* <p className="text-white font-black text-[48px]">"</p> */}
 
-    <div className="mt-1">
+    <div className="mt-4">
       <p className="text-white tracking-wider text-[18px] min-h-[108px]">{name}</p>
 
       <div className="mt-7 flex justify-between items-center gap-1">
