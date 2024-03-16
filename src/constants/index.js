@@ -143,7 +143,7 @@ const experiences = [
     company_name: "Vbee",
     icon: vbee,
     iconBg: "#E6DEDD",
-    date: "September 2022 - Present",
+    date: "September 2021 - Present",
     points: [
       "Developing and maintaining web applications using React.js, NodeJS and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
