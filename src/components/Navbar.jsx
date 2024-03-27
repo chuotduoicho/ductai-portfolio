@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logoPortfolio, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -44,7 +44,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src="https://banner2.cleanpng.com/20180509/txe/kisspng-letter-case-cursive-font-letter-t-5af2dff33e1499.6271376315258664832543.jpg"
+            src={logoPortfolio}
             alt="logo"
             className="w-9 h-9 object-contain rounded-full"
           />

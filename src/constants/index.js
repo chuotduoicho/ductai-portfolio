@@ -31,8 +31,9 @@ import {
   quiz,
   projectmanagement,
   certnexus,
-  startup,computercommunication,
-  webdesign
+  startup,
+  computercommunication,
+  webdesign,
 } from "../assets";
 
 export const navLinks = [
@@ -130,7 +131,7 @@ const experiences = [
     company_name: "FPT Software",
     icon: fpt,
     iconBg: "#E6DEDD",
-    date: "March 2020 - April 2021",
+    date: "April 2021 - August 2021",
     points: [
       "Developing web applications using Java and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -247,7 +248,7 @@ const projects = [
     ],
     image: blog,
     source_code_link: "https://github.com/chuotduoicho/blog-FE",
-    website_link:"https://ductai-blog-a0d36.web.app/"
+    website_link: "https://ductai-blog-a0d36.web.app/",
   },
   {
     name: "Quiz app",
@@ -265,7 +266,7 @@ const projects = [
     ],
     image: quiz,
     source_code_link: "https://github.com/chuotduoicho/react-quiz",
-    website_link:"https://ductai-quiz-app.web.app/"
+    website_link: "https://ductai-quiz-app.web.app/",
   },
   {
     name: "Oan tu ti",
@@ -283,7 +284,7 @@ const projects = [
     ],
     image: oantuti,
     source_code_link: "https://github.com/chuotduoicho/React-khoa2",
-    website_link:"https://ductai-khoa2-oantuxi.web.app/"
+    website_link: "https://ductai-khoa2-oantuxi.web.app/",
   },
   {
     name: "Ai la trieu phu",
@@ -305,7 +306,7 @@ const projects = [
     ],
     image: ailatrieuphu,
     source_code_link: "https://github.com/chuotduoicho/ailatrieuphu",
-    website_link:"https://ductai-ailatrieuphu.web.app/"
+    website_link: "https://ductai-ailatrieuphu.web.app/",
   },
 ];
 
