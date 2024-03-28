@@ -9,27 +9,32 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-const FeedbackCard = ({ index, name, date,link,image }) => (
+const FeedbackCard = ({ index, name, date, link, image }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
   >
-       <img
-          src={image}
-          alt="certificate logo"
-          className="object-contain rounded-xl transition-transform transform hover:scale-110"
-        />
+    <img
+      src={image}
+      alt="certificate logo"
+      className="object-contain rounded-xl transition-transform transform hover:scale-110"
+    />
     {/* <p className="text-white font-black text-[48px]">"</p> */}
 
     <div className="mt-4">
-      <p className="text-white tracking-wider text-[18px] min-h-[108px]">{name}</p>
+      <p className="text-white tracking-wider text-[18px] min-h-[108px]">
+        {name}
+      </p>
 
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
           <p className="mt-1 text-secondary text-[12px]">
-          <span className='blue-text-gradient'>@</span> {date}
+            <span className="blue-text-gradient">@</span> {date}
           </p>
-          <a className="text-white font-medium text-[16px] flex gap-4 items-center cursor-pointer" href={link}>
+          <a
+            className="text-white font-medium text-[16px] flex gap-4 items-center cursor-pointer"
+            href={link}
+          >
             View detail
             <svg
               class="w-3 h-3 text-white"
@@ -100,4 +105,4 @@ const Feedbacks = () => {
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, "certificate");

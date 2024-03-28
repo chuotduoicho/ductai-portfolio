@@ -37,6 +37,7 @@ import blog from "./project/blog.png";
 import ailatrieuphu from "./project/ai-la-trieu-phu.png";
 import oantuti from "./project/oan-tu-ti.png";
 import quiz from "./project/quiz.png";
+import whether from "./project/whether-app.png";
 
 import projectmanagement from "./certificate/project-management.jpeg";
 import certnexus from "./certificate/cert-nexus.jpeg";
@@ -85,4 +86,5 @@ export {
   ailatrieuphu,
   oantuti,
   quiz,
+  whether,
 };

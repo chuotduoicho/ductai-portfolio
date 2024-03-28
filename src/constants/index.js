@@ -29,6 +29,7 @@ import {
   ailatrieuphu,
   oantuti,
   quiz,
+  whether,
   projectmanagement,
   certnexus,
   startup,
@@ -44,6 +45,14 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "project",
+    title: "Project",
+  },
+  {
+    id: "certificate",
+    title: "Certificate",
   },
   {
     id: "contact",
@@ -307,6 +316,24 @@ const projects = [
     image: ailatrieuphu,
     source_code_link: "https://github.com/chuotduoicho/ailatrieuphu",
     website_link: "https://ductai-ailatrieuphu.web.app/",
+  },
+  {
+    name: "Whether app",
+    description:
+      "Track weather conditions in real-time. Get accurate forecasts, temperature, humidity, wind speed, and more. Plan your day with confidence.",
+    tags: [
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: whether,
+    source_code_link: "https://github.com/chuotduoicho/ductai-whether-app",
+    website_link: "https://chuotduoicho.github.io/ductai-whether-app/",
   },
 ];
 

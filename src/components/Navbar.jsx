@@ -50,11 +50,11 @@ const Navbar = () => {
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             DucTai &nbsp;
-            <span className="sm:block hidden"> | Web Developer</span>
+            {/* <span className="sm:block hidden"> | Web Developer</span> */}
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden md:flex flex-row gap-8">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -68,11 +68,11 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain"
+            className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
 
