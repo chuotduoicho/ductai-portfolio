@@ -30,6 +30,7 @@ import {
   oantuti,
   quiz,
   whether,
+  meetingroom,
   projectmanagement,
   certnexus,
   startup,
@@ -334,6 +335,24 @@ const projects = [
     image: whether,
     source_code_link: "https://github.com/chuotduoicho/ductai-whether-app",
     website_link: "https://chuotduoicho.github.io/ductai-whether-app/",
+  },
+  {
+    name: "Meeting room schedule",
+    description:
+      "Efficiently manage meeting room bookings. Check availability, book rooms, and view upcoming meetings. Streamline your scheduling process.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: meetingroom,
+    source_code_link: "https://github.com/chuotduoicho/meeting-room-schedule",
+    website_link: "https://meeting-schedule-ductai-vais.netlify.app/",
   },
 ];
 
