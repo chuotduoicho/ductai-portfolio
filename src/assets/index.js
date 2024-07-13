@@ -22,16 +22,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import ohmidas from "./company/ohmidas.png";
 import fpt from "./company/fpt.png";
 import vbee from "./company/vbee.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 import blog from "./project/blog.png";
 import ailatrieuphu from "./project/ai-la-trieu-phu.png";
@@ -74,15 +67,9 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  ohmidas,
   fpt,
   vbee,
-  carrent,
-  jobit,
-  tripguide,
   blog,
   ailatrieuphu,
   oantuti,
