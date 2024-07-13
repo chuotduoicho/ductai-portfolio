@@ -134,7 +134,7 @@ const experiences = [
     title: "Java Web Developer",
     company_name: "FPT Software",
     icon: fpt,
-    iconBg: "#E6DEDD",
+    iconBg: "#F9F7F7",
     date: "April 2021 - August 2021",
     points: [
       "Developing web applications using Java and other related technologies.",
@@ -147,7 +147,7 @@ const experiences = [
     title: "Fullstack Developer",
     company_name: "Vbee",
     icon: vbee,
-    iconBg: "#E6DEDD",
+    iconBg: "rgb(239 238 192)",
     date: "September 2021 - May 2024",
     points: [
       "Developing and maintaining web applications using React.js, NodeJS and other related technologies.",
@@ -160,7 +160,7 @@ const experiences = [
     title: "Fullstack Developer",
     company_name: "FPT Software",
     icon: ohmidas,
-    iconBg: "white",
+    iconBg: "#e6ff9e",
     date: "June 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js, NodeJS and other related technologies.",
