@@ -47,12 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in JavaScript,
-        TypeScript and Java, and expertise in frameworks like ReactJs, NodeJs,
-        ThreeJs and SpringBoot. I'm a quick learner and collaborate closely with
-        clients to create efficient, scalable, and user-friendly solutions that
-        solve real-world problems. Let's work together to bring your ideas to
-        life!
+        I'm a frontend web developer with 4+ years of experience building
+        responsive and high-performance applications. I specialize in ReactJS,
+        Next.js, TypeScript, and modern UI/UX architecture. With strong project
+        leadership and mentoring experience, I aim to deliver scalable,
+        user-centric web solutions for global clients, especially in Japan.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
