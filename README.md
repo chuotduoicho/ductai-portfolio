@@ -1,1 +1,1 @@
-# ductai-porfolio
+# ductai-portfolio
