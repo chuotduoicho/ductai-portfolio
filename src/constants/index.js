@@ -131,42 +131,27 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Java Web Developer",
-    company_name: "FPT Software",
-    icon: fpt,
-    iconBg: "#F9F7F7",
-    date: "April 2021 - August 2021",
-    points: [
-      "Developing web applications using Java and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Fullstack Developer",
     company_name: "Vbee",
     icon: vbee,
     iconBg: "rgb(239 238 192)",
-    date: "September 2021 - May 2024",
+    date: "September 2021 - April 2024",
     points: [
-      "Developing and maintaining web applications using React.js, NodeJS and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed AI-driven dashboards using ReactJS, Redux Saga, and WebSocket.",
+      "Led UI/UX optimization for both desktop & mobile platforms.",
+      "Mentored interns and ensured coding standards and Git workflows.",
     ],
   },
   {
-    title: "Fullstack Developer",
-    company_name: "FPT Software",
+    title: "Frontend Lead",
+    company_name: "Ohmidas",
     icon: ohmidas,
     iconBg: "#e6ff9e",
     date: "June 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js, NodeJS and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led frontend architecture using Next.js, React 19, SWR, Tailwind CSS.",
+      "Built scalable systems for booking & exam registration platforms.",
+      "Integrated API logic and mentored junior developers.",
     ],
   },
 ];
