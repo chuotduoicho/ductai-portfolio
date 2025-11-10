@@ -47,11 +47,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a frontend web developer with 4+ years of experience building
-        responsive and high-performance applications. I specialize in ReactJS,
-        Next.js, TypeScript, and modern UI/UX architecture. With strong project
-        leadership and mentoring experience, I aim to deliver scalable,
-        user-centric web solutions for global clients, especially in Japan.
+        I'm a Full-stack Developer with a strong focus on frontend (React,
+        Next.js). I'm currently expanding my backend skills with Node.js and
+        aiming for technical leadership through team management and scalable
+        architecture design.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
