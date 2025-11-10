@@ -131,27 +131,31 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Fullstack Developer",
+    title: "Full-stack Developer (Frontend-focused)",
     company_name: "Vbee",
     icon: vbee,
     iconBg: "rgb(239 238 192)",
     date: "September 2021 - April 2024",
     points: [
-      "Developed AI-driven dashboards using ReactJS, Redux Saga, and WebSocket.",
-      "Led UI/UX optimization for both desktop & mobile platforms.",
-      "Mentored interns and ensured coding standards and Git workflows.",
+      "Built AI-driven dashboards using ReactJS, Redux Saga, and WebSocket for real-time data visualization.",
+      "Developed backend logic with Node.js, including cron jobs, API integration, and data processing.",
+      "Led UI/UX optimization across desktop and mobile platforms to enhance user experience.",
+      "Mentored interns, enforced Git workflows, and promoted clean code practices within the team.",
+      "Collaborated with cross-functional teams to align technical solutions with business goals.",
     ],
   },
   {
-    title: "Frontend Lead",
+    title: "Full-stack Developer (Frontend-focused)",
     company_name: "Ohmidas",
     icon: ohmidas,
     iconBg: "#e6ff9e",
     date: "June 2024 - Present",
     points: [
-      "Led frontend architecture using Next.js, React 19, SWR, Tailwind CSS.",
-      "Built scalable systems for booking & exam registration platforms.",
-      "Integrated API logic and mentored junior developers.",
+      "Led frontend architecture using Next.js, React 19, SWR, and Tailwind CSS.",
+      "Developed scalable booking and exam registration systems with strong UI/UX emphasis.",
+      "Integrated backend APIs and handled data flow using TypeScript and SWR.",
+      "Collaborated with Japanese clients and BAs to align technical solutions with business needs.",
+      "Mentored junior developers and contributed to team growth and code quality.",
     ],
   },
 ];
