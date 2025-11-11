@@ -16,20 +16,15 @@ const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop="demand"
+      frameloop='demand'
       dpr={[1, 2]}
-      gl={{
-        preserveDrawingBuffer: true,
-        antialias: false,
-        powerPreference: "high-performance",
-      }}
+      gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
         near: 0.1,
         far: 200,
         position: [-4, 3, 6],
       }}
-      performance={{ min: 0.5 }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
