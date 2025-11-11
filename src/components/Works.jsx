@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects, landingPageProjects, realProjects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -38,27 +38,30 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-1">
-            {" "}
-            <div
-              onClick={() => window.open(website_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src="https://static.vecteezy.com/system/resources/previews/003/731/316/original/web-icon-line-on-white-background-image-for-web-presentation-logo-icon-symbol-free-vector.jpg"
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain rounded-full"
-              />
-            </div>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
+            {website_link && (
+              <div
+                onClick={() => window.open(website_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/003/731/316/original/web-icon-line-on-white-background-image-for-web-presentation-logo-icon-symbol-free-vector.jpg"
+                  alt="source code"
+                  className="w-1/2 h-1/2 object-contain rounded-full"
+                />
+              </div>
+            )}
+            {source_code_link && (
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="source code"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )}
           </div>
         </div>
 
@@ -104,6 +107,63 @@ const Works = () => {
       </div>
 
       <div className="mt-20 gap-7">
+        <p className={`${styles.sectionSubText} `}>
+          Real-world Projects (Client & Company)
+        </p>
+        <Swiper
+          spaceBetween={50}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            768: { slidesPerView: 1 },
+            960: { slidesPerView: 2 },
+            1280: { slidesPerView: 3 },
+          }}
+          className="mySwiper"
+          modules={[Autoplay]}
+        >
+          {realProjects.map((project, index) => (
+            <SwiperSlide key={`project-${index}`}>
+              <ProjectCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="mt-20 gap-7">
+        <p className={`${styles.sectionSubText} `}>Landing Page Projects</p>
+        <Swiper
+          spaceBetween={50}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            768: { slidesPerView: 1 },
+            960: { slidesPerView: 2 },
+            1280: { slidesPerView: 3 },
+          }}
+          className="mySwiper"
+          modules={[Autoplay]}
+        >
+          {landingPageProjects.map((project, index) => (
+            <SwiperSlide key={`project-${index}`}>
+              <ProjectCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="mt-20 gap-7">
+        <p className={`${styles.sectionSubText} `}>Personal Projects</p>
         <Swiper
           spaceBetween={50}
           autoplay={{
