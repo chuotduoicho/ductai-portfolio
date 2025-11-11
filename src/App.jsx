@@ -1,9 +1,21 @@
 import { BrowserRouter } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+// Eager load components hiển thị đầu tiên
+import { Hero, Navbar } from "./components";
+
+// Lazy load components không cần thiết ngay lập tức
+const About = lazy(() => import("./components/About"));
+const Contact = lazy(() => import("./components/Contact"));
+const Experience = lazy(() => import("./components/Experience"));
+const Feedbacks = lazy(() => import("./components/Feedbacks"));
+const Tech = lazy(() => import("./components/Tech"));
+const Works = lazy(() => import("./components/Works"));
+const StarsCanvas = lazy(() => import("./components/canvas/Stars"));
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics,logEvent  } from "firebase/analytics";
+import { getAnalytics, logEvent } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -23,29 +35,37 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-const App = () => {
+// Loading component
+const PageLoader = () => (
+  <div className="flex items-center justify-center min-h-screen bg-primary">
+    <div className="text-white text-xl">Loading...</div>
+  </div>
+);
 
-  logEvent(analytics, 'notification_received');
+const App = () => {
+  logEvent(analytics, "notification_received");
 
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <Suspense fallback={<PageLoader />}>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <Feedbacks />
+          <div className="relative z-0">
+            <Contact />
+            <StarsCanvas />
+          </div>
+        </Suspense>
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
