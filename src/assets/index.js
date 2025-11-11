@@ -32,6 +32,15 @@ import oantuti from "./project/oan-tu-ti.png";
 import quiz from "./project/quiz.png";
 import whether from "./project/whether-app.png";
 import meetingroom from "./project/meeting-room.png";
+import vbeeLanding from "./project/landingpage/vbee.png";
+import aihub from "./project/landingpage/aihub.png";
+import mobiva from "./project/landingpage/mobiva.png";
+import untensha from "./project/landingpage/untensha.png";
+import nkportal from "./project/landingpage/nkportal.png";
+import aivoice from "./project/complex/aivoice.png";
+import aicall from "./project/complex/aicall.png";
+import classnk from "./project/complex/classnk.png";
+import tobu from "./project/complex/tobu.png";
 
 import projectmanagement from "./certificate/project-management.jpeg";
 import certnexus from "./certificate/cert-nexus.jpeg";
@@ -76,4 +85,13 @@ export {
   quiz,
   whether,
   meetingroom,
+  vbeeLanding,
+  aihub,
+  mobiva,
+  untensha,
+  nkportal,
+  aivoice,
+  aicall,
+  classnk,
+  tobu,
 };

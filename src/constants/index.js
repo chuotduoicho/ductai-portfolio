@@ -15,7 +15,6 @@ import {
   git,
   figma,
   docker,
-  fpt,
   vbee,
   ohmidas,
   threejs,
@@ -30,6 +29,15 @@ import {
   startup,
   computercommunication,
   webdesign,
+  vbeeLanding,
+  aihub,
+  mobiva,
+  untensha,
+  nkportal,
+  aivoice,
+  aicall,
+  classnk,
+  tobu,
 } from "../assets";
 
 export const navLinks = [
@@ -119,10 +127,10 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
   {
     name: "docker",
     icon: docker,
@@ -157,49 +165,6 @@ const experiences = [
       "Collaborated with Japanese clients and BAs to align technical solutions with business needs.",
       "Mentored junior developers and contributed to team growth and code quality.",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -326,6 +291,197 @@ const projects = [
   },
 ];
 
+const landingPageProjects = [
+  {
+    name: "Vbee Landing Page",
+    description:
+      "Landing page for Vbee, an AI-powered voice assistant. Showcases features, use cases, and testimonials to attract users.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: vbeeLanding,
+    website_link: "https://www.vbee.ai/",
+  },
+  {
+    name: "AIHub Landing Page",
+    description:
+      "Landing page for AIHub, a platform for AI resources and tools. Highlights offerings and benefits to engage visitors.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: aihub,
+    website_link: "https://mobiai.vn/",
+  },
+  {
+    name: "Mobiva Landing Page",
+    description:
+      "Landing page for Mobiva Smartcall, a call center solution. Showcases features and benefits to attract potential clients.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mobiva,
+    website_link: "https://smartcall.mobifone.vn/",
+  },
+  {
+    name: "Untenshashokuba",
+    description:
+      "Landing page for Untensha Shokuba, a Japanese restaurant. Highlights menu, ambiance, and location to entice visitors.",
+    tags: [
+      {
+        name: "wordpress",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: untensha,
+    website_link: "https://www.untenshashokuba.go.jp/",
+  },
+  {
+    name: "NK Class Portal",
+    description:
+      "Classic quiz game inspired by the popular TV show. Test your knowledge, answer trivia questions of increasing difficulty.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nkportal,
+    website_link: "https://sswt-portal.classnk.or.jp/",
+  },
+];
+
+const realProjects = [
+  {
+    name: "Vbee AI Voice",
+    description:
+      "AI-powered voice synthesis platform by Vbee. Enables users to create natural-sounding voice content for various applications.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: aivoice,
+  },
+  {
+    name: "Vbee AI Call",
+    description:
+      "AI-powered voice calling platform by Vbee. Enables users to make natural-sounding voice calls for various applications.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "node",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: aicall,
+  },
+  {
+    name: "ClassNK",
+    description:
+      "ClassNK for register exam and manage student information online. Streamlines administrative tasks for educational institutions.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "antd",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nestjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: classnk,
+  },
+  {
+    name: "Tobutoptours",
+    description:
+      "Booking tours website for Tobu Top Tours. Allows users to browse and book tours easily with a user-friendly interface.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "antd",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nestjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: tobu,
+  },
+];
+
 const certificate = [
   {
     name: "Project Management Principles and Practices",
@@ -368,7 +524,8 @@ export {
   services,
   technologies,
   experiences,
-  testimonials,
   projects,
+  landingPageProjects,
+  realProjects,
   certificate,
 };
