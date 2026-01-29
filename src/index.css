@@ -13,20 +13,15 @@
   color-scheme: dark;
 }
 
-/* Optimize font loading */
-@supports (font-variation-settings: normal) {
-  * {
-    font-display: swap; /* Hiển thị text ngay lập tức với font dự phòng */
-  }
-}
-
 /* Add will-change hint for better performance on animations */
 .animate-element {
   will-change: transform, opacity;
 }
 
 /* Improve rendering performance */
-img, video, canvas {
+img,
+video,
+canvas {
   max-width: 100%;
   height: auto;
   content-visibility: auto; /* Lazy render offscreen content */
@@ -237,3 +232,5 @@ img, video, canvas {
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+

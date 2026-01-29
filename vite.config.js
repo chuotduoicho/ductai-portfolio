@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
@@ -9,8 +8,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          // Tách vendor chunks
-          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          "react-vendor": ["react", "react-dom"],
           "three-vendor": ["three", "@react-three/fiber", "@react-three/drei"],
           "animation-vendor": ["framer-motion"],
           "ui-vendor": [
@@ -21,18 +19,15 @@ export default defineConfig({
         },
       },
     },
-    // Minify và optimize
     minify: "terser",
     terserOptions: {
       compress: {
-        drop_console: true, // Xóa console.log trong production
+        drop_console: true,
         drop_debugger: true,
       },
     },
-    // Enable source map cho debugging (có thể tắt nếu không cần)
     sourcemap: false,
   },
-  // Optimize dependencies
   optimizeDeps: {
     include: ["react", "react-dom", "three"],
   },

@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -61,10 +61,10 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{
         preserveDrawingBuffer: true,
-        antialias: false, // Tắt antialiasing để tăng performance
-        powerPreference: "high-performance", // Ưu tiên GPU
+        antialias: false,
+        powerPreference: "high-performance",
       }}
-      performance={{ min: 0.5 }} // Tự động giảm chất lượng khi FPS thấp
+      performance={{ min: 0.5 }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls

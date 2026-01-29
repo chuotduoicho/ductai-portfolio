@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -35,8 +34,8 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
+        <a
+          href="#"
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
@@ -52,7 +51,7 @@ const Navbar = () => {
             DucTai &nbsp;
             {/* <span className="sm:block hidden"> | Web Developer</span> */}
           </p>
-        </Link>
+        </a>
 
         <ul className="list-none hidden md:flex flex-row gap-8">
           {navLinks.map((nav) => (

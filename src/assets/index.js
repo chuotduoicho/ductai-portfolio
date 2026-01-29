@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import logoPortfolio from "./logo-portfolio.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -10,7 +9,6 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -23,7 +21,6 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import ohmidas from "./company/ohmidas.png";
-import fpt from "./company/fpt.png";
 import vbee from "./company/vbee.png";
 
 import blog from "./project/blog.png";
@@ -54,7 +51,6 @@ export {
   computercommunication,
   startup,
   webdesign,
-  logo,
   logoPortfolio,
   backend,
   creator,
@@ -65,7 +61,6 @@ export {
   close,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
@@ -77,7 +72,6 @@ export {
   typescript,
   threejs,
   ohmidas,
-  fpt,
   vbee,
   blog,
   ailatrieuphu,
