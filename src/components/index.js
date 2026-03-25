@@ -7,6 +7,7 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
+import AIAssistant from "./AIAssistant";
 export {
   Hero,
   Navbar,
@@ -16,6 +17,7 @@ export {
   Works,
   Feedbacks,
   Contact,
+  AIAssistant,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

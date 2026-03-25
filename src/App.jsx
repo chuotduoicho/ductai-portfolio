@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 
 // Eager load critical components
-import { Hero, Navbar } from "./components";
+import { AIAssistant, Hero, Navbar } from "./components";
 
 // Lazy load non-critical sections
 const About = lazy(() => import("./components/About"));
@@ -37,6 +37,7 @@ const App = () => {
           <StarsCanvas />
         </div>
       </Suspense>
+      <AIAssistant />
     </div>
   );
 };
