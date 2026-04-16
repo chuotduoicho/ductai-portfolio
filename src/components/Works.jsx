@@ -162,7 +162,7 @@ const Works = () => {
         </Swiper>
       </div>
       <div className="mt-20 gap-7">
-        <p className={`${styles.sectionSubText} `}>Personal Projects</p>
+        <p className={`${styles.sectionSubText} `}>Funny Games Projects</p>
         <Swiper
           spaceBetween={50}
           autoplay={{

@@ -20,7 +20,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import ohmidas from "./company/ohmidas.png";
+import wasabi from "./company/wasabi.png";
 import vbee from "./company/vbee.png";
 
 import blog from "./project/blog.png";
@@ -71,7 +71,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  ohmidas,
+  wasabi,
   vbee,
   blog,
   ailatrieuphu,

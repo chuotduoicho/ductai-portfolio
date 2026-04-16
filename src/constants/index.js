@@ -15,7 +15,7 @@ import {
   git,
   docker,
   vbee,
-  ohmidas,
+  wasabi,
   threejs,
   blog,
   ailatrieuphu,
@@ -149,8 +149,8 @@ const experiences = [
   },
   {
     title: "Full-stack Developer (Frontend-focused)",
-    company_name: "Ohmidas",
-    icon: ohmidas,
+    company_name: "Wasabi",
+    icon: wasabi,
     iconBg: "#e6ff9e",
     date: "June 2024 - Present",
     points: [
@@ -164,32 +164,32 @@ const experiences = [
 ];
 
 const projects = [
-  {
-    name: "My blog",
-    description:
-      "A personal space to share thoughts, experiences, and passions. Dive into a diverse range of topics, from technology to travel, and discover captivating stories.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "node",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "express",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: blog,
-    source_code_link: "https://github.com/chuotduoicho/blog-FE",
-    website_link: "https://ductai-blog-a0d36.web.app/",
-  },
+  // {
+  //   name: "My blog",
+  //   description:
+  //     "A personal space to share thoughts, experiences, and passions. Dive into a diverse range of topics, from technology to travel, and discover captivating stories.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "node",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "orange-text-gradient",
+  //     },
+  //   ],
+  //   image: blog,
+  //   source_code_link: "https://github.com/chuotduoicho/blog-FE",
+  //   website_link: "https://ductai-blog-a0d36.web.app/",
+  // },
   {
     name: "Quiz app",
     description:
@@ -248,42 +248,42 @@ const projects = [
     source_code_link: "https://github.com/chuotduoicho/ailatrieuphu",
     website_link: "https://ductai-ailatrieuphu.web.app/",
   },
-  {
-    name: "Whether app",
-    description:
-      "Track weather conditions in real-time. Get accurate forecasts, temperature, humidity, wind speed, and more. Plan your day with confidence.",
-    tags: [
-      {
-        name: "javascript",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: whether,
-    source_code_link: "https://github.com/chuotduoicho/ductai-whether-app",
-    website_link: "https://chuotduoicho.github.io/ductai-whether-app/",
-  },
-  {
-    name: "Meeting room schedule",
-    description:
-      "Efficiently manage meeting room bookings. Check availability, book rooms, and view upcoming meetings. Streamline your scheduling process.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: meetingroom,
-    source_code_link: "https://github.com/chuotduoicho/meeting-room-schedule",
-    website_link: "https://meeting-schedule-ductai-vais.netlify.app/",
-  },
+  // {
+  //   name: "Whether app",
+  //   description:
+  //     "Track weather conditions in real-time. Get accurate forecasts, temperature, humidity, wind speed, and more. Plan your day with confidence.",
+  //   tags: [
+  //     {
+  //       name: "javascript",
+  //       color: "yellow-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: whether,
+  //   source_code_link: "https://github.com/chuotduoicho/ductai-whether-app",
+  //   website_link: "https://chuotduoicho.github.io/ductai-whether-app/",
+  // },
+  // {
+  //   name: "Meeting room schedule",
+  //   description:
+  //     "Efficiently manage meeting room bookings. Check availability, book rooms, and view upcoming meetings. Streamline your scheduling process.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: meetingroom,
+  //   source_code_link: "https://github.com/chuotduoicho/meeting-room-schedule",
+  //   website_link: "https://meeting-schedule-ductai-vais.netlify.app/",
+  // },
 ];
 
 const landingPageProjects = [
