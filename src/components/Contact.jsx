@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
+import { resumePdf } from "../assets";
+import { profile } from "../constants";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
@@ -47,12 +49,12 @@ const Contact = () => {
         templateId,
         {
           from_name: form.name,
-          to_name: "Duc Tai",
+          to_name: profile.name,
           from_email: form.email,
-          to_email: "vo1122000@gmail.com",
+          to_email: profile.contact.email,
           message: form.message,
         },
-        publicKey
+        publicKey,
       )
       .then(
         () => {
@@ -70,7 +72,7 @@ const Contact = () => {
           console.error(error);
 
           alert("Ahh, something went wrong. Please try again.");
-        }
+        },
       );
   };
 
@@ -84,6 +86,40 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <div className="mt-6 rounded-2xl border border-white/10 bg-tertiary/40 p-5">
+          <p className="text-sm uppercase tracking-[0.2em] text-secondary">
+            Recruiter shortcut
+          </p>
+          <p className="mt-3 text-[16px] leading-7 text-white-100">
+            For hiring conversations, the fastest path is reviewing my CV and
+            reaching out directly by email.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-4 text-sm">
+            <a
+              href={`mailto:${profile.contact.email}`}
+              className="text-[#915EFF] transition hover:text-white"
+            >
+              {profile.contact.email}
+            </a>
+            <a
+              href={resumePdf}
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#915EFF] transition hover:text-white"
+            >
+              Open CV
+            </a>
+            {/* <a
+              href={profile.contact.github}
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#915EFF] transition hover:text-white"
+            >
+              GitHub
+            </a> */}
+          </div>
+        </div>
 
         <form onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">

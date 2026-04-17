@@ -67,14 +67,19 @@ const Feedbacks = () => {
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px] pb-24 md:pb-28`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What I achieved</p>
-          <h2 className={styles.sectionHeadText}>Certificate.</h2>
+          <p className={styles.sectionSubText}>Continuous learning</p>
+          <h2 className={styles.sectionHeadText}>Credentials.</h2>
         </motion.div>
+        <p className="mt-4 max-w-3xl text-[16px] leading-7 text-secondary">
+          Certifications support the profile, but they are intentionally kept
+          behind experience and projects because the strongest signal here is
+          real delivery work.
+        </p>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX}`}>
+      <div className={`-mt-12 md:-mt-20 pb-14 ${styles.paddingX}`}>
         <Swiper
           spaceBetween={50}
           autoplay={{

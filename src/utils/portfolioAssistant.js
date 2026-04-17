@@ -1,10 +1,9 @@
 import {
+  profile,
   services,
   technologies,
   experiences,
-  projects,
-  landingPageProjects,
-  realProjects,
+  allProjects,
 } from "../constants";
 
 export const sectionLinks = {
@@ -14,30 +13,24 @@ export const sectionLinks = {
   contact: "#contact",
 };
 
-const allProjects = [
-  ...projects.map((item) => ({ ...item, group: "Personal" })),
-  ...landingPageProjects.map((item) => ({ ...item, group: "Landing Page" })),
-  ...realProjects.map((item) => ({ ...item, group: "Real-world" })),
-];
-
 export const buildPortfolioKnowledge = () => ({
-  profile: {
-    title: "Full-stack Developer (Frontend-focused)",
-    summary:
-      "Frontend-focused full-stack developer with React/Next.js strength and growing backend depth in Node.js and scalable architecture.",
-  },
+  profile,
   services: services.map((service) => service.title),
   technologies: technologies.map((item) => item.name),
   experiences: experiences.map((item) => ({
     company: item.company_name,
     title: item.title,
     date: item.date,
+    focus: item.focus,
+    stack: item.stack,
     highlights: item.points,
   })),
   projects: allProjects.map((project) => ({
     name: project.name,
     group: project.group,
     description: project.description,
+    role: project.role,
+    impact: project.impact,
     tags: project.tags?.map((tag) => tag.name) || [],
     source_code_link: project.source_code_link || null,
     website_link: project.website_link || null,
@@ -52,7 +45,7 @@ const hasKeyword = (message, keywords) =>
 
 const findProject = (message) => {
   const directMatch = allProjects.find((project) =>
-    message.includes(project.name.toLowerCase())
+    message.includes(project.name.toLowerCase()),
   );
 
   if (directMatch) return directMatch;
@@ -77,6 +70,8 @@ const formatProjectAnswer = (project) => {
   return [
     `Project: ${project.name} (${project.group})`,
     `Summary: ${project.description}`,
+    `Role: ${project.role}`,
+    `Why it matters: ${project.impact}`,
     `Tech: ${stack}`,
     source,
     demo,
@@ -86,11 +81,11 @@ const formatProjectAnswer = (project) => {
 
 const buildRecruiterGuide = (message) => {
   if (hasKeyword(message, ["frontend", "ui", "ux", "react", "next"])) {
-    return `For frontend depth, start at ${sectionLinks.projects} and check Landing Page + Real-world projects, then read ${sectionLinks.experience} for architecture impact.`;
+    return `For frontend depth, start at ${sectionLinks.experience} for architecture ownership, then go to ${sectionLinks.projects} and read the Production Platforms section first.`;
   }
 
   if (hasKeyword(message, ["backend", "node", "api", "database"])) {
-    return `For backend and system thinking, check ${sectionLinks.experience} first, then Projects in ${sectionLinks.projects} where Node.js, NestJS, MongoDB, and MySQL are used.`;
+    return `For backend and system thinking, check ${sectionLinks.experience} first, then look at production projects in ${sectionLinks.projects} where Node.js, NestJS, MongoDB, and MySQL appear.`;
   }
 
   if (hasKeyword(message, ["lead", "mentor", "management", "team"])) {
@@ -103,9 +98,12 @@ const buildRecruiterGuide = (message) => {
 const buildSkillsAnswer = () => {
   const coreServices = services.map((service) => service.title).join(", ");
   const techStack = technologies.map((item) => item.name).join(", ");
+  const focusAreas = profile.focusAreas.join(", ");
 
   return [
+    `Profile: ${profile.role}`,
     `Core roles: ${coreServices}`,
+    `Current focus: ${focusAreas}`,
     `Main stack: ${techStack}`,
     `You can see highlights in ${sectionLinks.about} and ${sectionLinks.projects}.`,
   ].join("\n");
@@ -115,7 +113,7 @@ const buildExperienceAnswer = () => {
   const summary = experiences
     .map(
       (item) =>
-        `${item.company_name} (${item.date}): ${item.title}. Key focus: ${item.points[0]}`
+        `${item.company_name} (${item.date}): ${item.title}. Focus: ${item.focus}`,
     )
     .join("\n");
 
@@ -170,6 +168,10 @@ export const getPortfolioAnswer = (input, mode = "about") => {
     return buildExperienceAnswer();
   }
 
+  if (hasKeyword(message, ["cv", "resume", "download cv", "download resume"])) {
+    return `You can open the CV from the hero section or contact section. For the quickest review flow, read ${sectionLinks.experience} first and then ${sectionLinks.projects}.`;
+  }
+
   if (
     hasKeyword(message, [
       "recruiter",
@@ -186,7 +188,7 @@ export const getPortfolioAnswer = (input, mode = "about") => {
   }
 
   return [
-    "I can answer about skills, experience, and projects with repo/demo links.",
+    "I can answer about skills, experience, production projects, and where to start reviewing this portfolio.",
     "Try one of these:",
     '- "What technology did you use in Vbee AI Voice?"',
     '- "What are your strongest frontend skills?"',
@@ -203,6 +205,6 @@ export const assistantSuggestions = {
   project: [
     "What technology did you use in Vbee AI Voice?",
     "Tell me about ClassNK project and your stack.",
-    "Which projects have live demos?",
+    "Which production projects should I review first?",
   ],
 };

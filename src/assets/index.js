@@ -23,12 +23,9 @@ import threejs from "./tech/threejs.svg";
 import wasabi from "./company/wasabi.png";
 import vbee from "./company/vbee.png";
 
-import blog from "./project/blog.png";
 import ailatrieuphu from "./project/ai-la-trieu-phu.png";
 import oantuti from "./project/oan-tu-ti.png";
 import quiz from "./project/quiz.png";
-import whether from "./project/whether-app.png";
-import meetingroom from "./project/meeting-room.png";
 import vbeeLanding from "./project/landingpage/vbee.png";
 import aihub from "./project/landingpage/aihub.png";
 import mobiva from "./project/landingpage/mobiva.png";
@@ -44,6 +41,7 @@ import certnexus from "./certificate/cert-nexus.jpeg";
 import computercommunication from "./certificate/computer-communication.jpeg";
 import startup from "./certificate/startup.jpeg";
 import webdesign from "./certificate/web-design.jpeg";
+import resumePdf from "./Vo-Duc-Tai-TopCV.vn-160426.165339.pdf";
 
 export {
   projectmanagement,
@@ -51,6 +49,7 @@ export {
   computercommunication,
   startup,
   webdesign,
+  resumePdf,
   logoPortfolio,
   backend,
   creator,
@@ -73,12 +72,9 @@ export {
   threejs,
   wasabi,
   vbee,
-  blog,
   ailatrieuphu,
   oantuti,
   quiz,
-  whether,
-  meetingroom,
   vbeeLanding,
   aihub,
   mobiva,

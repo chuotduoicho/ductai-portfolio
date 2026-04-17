@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects, landingPageProjects, realProjects } from "../constants";
+import { projectSections } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -14,6 +14,8 @@ const ProjectCard = ({
   index,
   name,
   description,
+  role,
+  impact,
   tags,
   image,
   source_code_link,
@@ -67,6 +69,8 @@ const ProjectCard = ({
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-4 text-white text-[14px] leading-6">{role}</p>
+          <p className="mt-3 text-secondary text-[13px] leading-6">{impact}</p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -88,7 +92,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText} `}>Portfolio proof</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -97,97 +101,44 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          This section is intentionally ordered around recruiter signal. Start
+          with production systems and client work, then move into smaller
+          experiments that show interaction design and frontend craft.
         </motion.p>
       </div>
 
-      <div className="mt-20 gap-7">
-        <p className={`${styles.sectionSubText} `}>
-          Real-world Projects (Client & Company)
-        </p>
-        <Swiper
-          spaceBetween={50}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            768: { slidesPerView: 1 },
-            960: { slidesPerView: 2 },
-            1280: { slidesPerView: 3 },
-          }}
-          className="mySwiper"
-          modules={[Autoplay]}
-        >
-          {realProjects.map((project, index) => (
-            <SwiperSlide key={`project-${index}`}>
-              <ProjectCard
-                key={`project-${index}`}
-                index={index}
-                {...project}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-      <div className="mt-20 gap-7">
-        <p className={`${styles.sectionSubText} `}>Landing Page Projects</p>
-        <Swiper
-          spaceBetween={50}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            768: { slidesPerView: 1 },
-            960: { slidesPerView: 2 },
-            1280: { slidesPerView: 3 },
-          }}
-          className="mySwiper"
-          modules={[Autoplay]}
-        >
-          {landingPageProjects.map((project, index) => (
-            <SwiperSlide key={`project-${index}`}>
-              <ProjectCard
-                key={`project-${index}`}
-                index={index}
-                {...project}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-      <div className="mt-20 gap-7">
-        <p className={`${styles.sectionSubText} `}>Funny Games Projects</p>
-        <Swiper
-          spaceBetween={50}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            768: { slidesPerView: 1 },
-            960: { slidesPerView: 2 },
-            1280: { slidesPerView: 3 },
-          }}
-          className="mySwiper"
-          modules={[Autoplay]}
-        >
-          {projects.map((project, index) => (
-            <SwiperSlide key={`project-${index}`}>
-              <ProjectCard
-                key={`project-${index}`}
-                index={index}
-                {...project}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      {projectSections.map((section) => (
+        <div key={section.key} className="mt-20 gap-7">
+          <p className={`${styles.sectionSubText} `}>{section.title}</p>
+          <p className="mb-8 mt-3 max-w-4xl text-[15px] leading-7 text-secondary">
+            {section.description}
+          </p>
+          <Swiper
+            spaceBetween={50}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              768: { slidesPerView: 1 },
+              960: { slidesPerView: 2 },
+              1280: { slidesPerView: 3 },
+            }}
+            className="mySwiper"
+            modules={[Autoplay]}
+          >
+            {section.items.map((project, index) => (
+              <SwiperSlide key={`${section.key}-${project.name}`}>
+                <ProjectCard
+                  key={`${section.key}-${project.name}`}
+                  index={index}
+                  {...project}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      ))}
     </>
   );
 };

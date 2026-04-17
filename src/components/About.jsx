@@ -2,7 +2,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { profile, services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -46,11 +46,29 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a Full-stack Developer with a strong focus on frontend (React,
-        Next.js). I'm currently expanding my backend skills with Node.js and
-        aiming for technical leadership through team management and scalable
-        architecture design.
+        {profile.summary}
       </motion.p>
+
+      <motion.p
+        variants={fadeIn("", "", 0.2, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
+      >
+        {profile.details}
+      </motion.p>
+
+      <motion.div
+        variants={fadeIn("", "", 0.3, 1)}
+        className="mt-8 flex flex-wrap gap-3"
+      >
+        {profile.focusAreas.map((focus) => (
+          <span
+            key={focus}
+            className="rounded-full border border-white/10 bg-black-200 px-4 py-2 text-sm text-white"
+          >
+            {focus}
+          </span>
+        ))}
+      </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

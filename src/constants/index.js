@@ -17,12 +17,9 @@ import {
   vbee,
   wasabi,
   threejs,
-  blog,
   ailatrieuphu,
   oantuti,
   quiz,
-  whether,
-  meetingroom,
   projectmanagement,
   certnexus,
   startup,
@@ -39,6 +36,48 @@ import {
   tobu,
 } from "../assets";
 
+export const profile = {
+  name: "Vo Duc Tai",
+  shortName: "Duc Tai",
+  role: "Frontend-focused Full-stack Developer",
+  heroHeadline:
+    "Building production products with React, Next.js, and TypeScript.",
+  heroSubheadline:
+    "4+ years shipping AI, booking, and exam platforms with strong frontend ownership, mentoring, and cross-functional delivery.",
+  summary:
+    "I am a frontend-focused full-stack developer with 4+ years of experience delivering production web applications across AI products, booking systems, and education platforms. My strongest work sits at the intersection of product UI, frontend architecture, and implementation quality, while I keep expanding backend depth with Node.js, NestJS, MongoDB, and MySQL.",
+  details:
+    "Recent work has included leading frontend decisions with React, Next.js, TypeScript, Tailwind CSS, and SWR, mentoring teammates, and collaborating directly with business analysts and Japanese clients to turn business requirements into maintainable product flows.",
+  quickFacts: [
+    {
+      value: "4+ years",
+      label: "building production web applications",
+    },
+    {
+      value: "React, Next.js, TypeScript",
+      label: "core frontend delivery stack",
+    },
+    {
+      value: "Mentoring",
+      label: "interns and junior developers",
+    },
+    {
+      value: "Client-facing",
+      label: "working with Japanese stakeholders and BAs",
+    },
+  ],
+  focusAreas: [
+    "Frontend architecture",
+    "Product UI and UX execution",
+    "Full-stack delivery",
+    "Mentoring and team collaboration",
+  ],
+  contact: {
+    email: "taitiu123@gmail.com",
+    github: "https://github.com/chuotduoicho",
+  },
+};
+
 export const navLinks = [
   {
     id: "about",
@@ -46,15 +85,15 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
   },
   {
     id: "project",
-    title: "Project",
+    title: "Projects",
   },
   {
     id: "certificate",
-    title: "Certificate",
+    title: "Learning",
   },
   {
     id: "contact",
@@ -64,19 +103,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Architecture",
     icon: web,
   },
   {
-    title: "ReactJs Developer",
+    title: "React and Next.js Delivery",
     icon: mobile,
   },
   {
-    title: "NodeJs Developer",
+    title: "Full-stack Product Implementation",
     icon: backend,
   },
   {
-    title: "Database Developer",
+    title: "Mentoring and Collaboration",
     icon: creator,
   },
 ];
@@ -134,11 +173,14 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full-stack Developer (Frontend-focused)",
+    title: "Frontend-focused Full-stack Developer",
     company_name: "Vbee",
     icon: vbee,
     iconBg: "rgb(239 238 192)",
-    date: "September 2021 - April 2024",
+    date: "September 2022 - April 2024",
+    focus:
+      "Owned dashboard-heavy product work across AI voice and AI calling systems, balancing frontend experience, realtime visualization, and backend integrations.",
+    stack: ["React", "Redux Saga", "WebSocket", "Node.js", "MongoDB"],
     points: [
       "Built AI-driven dashboards using ReactJS, Redux Saga, and WebSocket for real-time data visualization.",
       "Developed backend logic with Node.js, including cron jobs, API integration, and data processing.",
@@ -148,11 +190,14 @@ const experiences = [
     ],
   },
   {
-    title: "Full-stack Developer (Frontend-focused)",
+    title: "Frontend-focused Full-stack Developer",
     company_name: "Wasabi",
     icon: wasabi,
     iconBg: "#e6ff9e",
     date: "June 2024 - Present",
+    focus:
+      "Leading frontend implementation for booking and exam-registration products with stronger ownership over architecture, code quality, and stakeholder communication.",
+    stack: ["Next.js 19", "React 19", "TypeScript", "SWR", "Tailwind CSS"],
     points: [
       "Led frontend architecture using Next.js, React 19, SWR, and Tailwind CSS.",
       "Developed scalable booking and exam registration systems with strong UI/UX emphasis.",
@@ -164,36 +209,13 @@ const experiences = [
 ];
 
 const projects = [
-  // {
-  //   name: "My blog",
-  //   description:
-  //     "A personal space to share thoughts, experiences, and passions. Dive into a diverse range of topics, from technology to travel, and discover captivating stories.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "mongodb",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "node",
-  //       color: "pink-text-gradient",
-  //     },
-  //     {
-  //       name: "express",
-  //       color: "orange-text-gradient",
-  //     },
-  //   ],
-  //   image: blog,
-  //   source_code_link: "https://github.com/chuotduoicho/blog-FE",
-  //   website_link: "https://ductai-blog-a0d36.web.app/",
-  // },
   {
     name: "Quiz app",
     description:
-      "Interactive platform for quizzes & tests. Offers diverse question formats, score tracking, time limits & result display. Engaging learning experience.",
+      "Personal quiz platform exploring reusable React patterns, multiple question flows, score tracking, time limits, and polished interaction feedback.",
+    role: "Built as a personal React project to practice product flow design.",
+    impact:
+      "Shows how I structure interactive UI, state transitions, and result experiences in smaller products.",
     tags: [
       {
         name: "react",
@@ -211,7 +233,10 @@ const projects = [
   {
     name: "Oan tu ti",
     description:
-      "Exciting adventure in solving enigmatic puzzles, riddles, and challenges. Engage your mind and unravel mysteries to progress through immersive levels.",
+      "A lightweight riddle and puzzle game focused on playful UI flow, progression, and interaction clarity.",
+    role: "Built as a frontend-heavy side project.",
+    impact:
+      "Useful as a smaller example of layout implementation, player feedback, and browser-based interaction design.",
     tags: [
       {
         name: "react",
@@ -229,7 +254,10 @@ const projects = [
   {
     name: "Ai la trieu phu",
     description:
-      "Classic quiz game inspired by the popular TV show. Test your knowledge, answer trivia questions of increasing difficulty, and aim to win the grand prize.",
+      "A quiz-game recreation inspired by the TV format, with staged difficulty, sound-driven feedback, and a stronger sense of progression.",
+    role: "Built as a personal experiment in interactive frontend storytelling.",
+    impact:
+      "Demonstrates game-state handling, UI pacing, and richer browser interaction through audio cues.",
     tags: [
       {
         name: "react",
@@ -248,49 +276,16 @@ const projects = [
     source_code_link: "https://github.com/chuotduoicho/ailatrieuphu",
     website_link: "https://ductai-ailatrieuphu.web.app/",
   },
-  // {
-  //   name: "Whether app",
-  //   description:
-  //     "Track weather conditions in real-time. Get accurate forecasts, temperature, humidity, wind speed, and more. Plan your day with confidence.",
-  //   tags: [
-  //     {
-  //       name: "javascript",
-  //       color: "yellow-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: whether,
-  //   source_code_link: "https://github.com/chuotduoicho/ductai-whether-app",
-  //   website_link: "https://chuotduoicho.github.io/ductai-whether-app/",
-  // },
-  // {
-  //   name: "Meeting room schedule",
-  //   description:
-  //     "Efficiently manage meeting room bookings. Check availability, book rooms, and view upcoming meetings. Streamline your scheduling process.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: meetingroom,
-  //   source_code_link: "https://github.com/chuotduoicho/meeting-room-schedule",
-  //   website_link: "https://meeting-schedule-ductai-vais.netlify.app/",
-  // },
 ];
 
 const landingPageProjects = [
   {
     name: "Vbee Landing Page",
     description:
-      "Landing page for Vbee, an AI-powered voice assistant. Showcases features, use cases, and testimonials to attract users.",
+      "Marketing landing page for Vbee, designed to communicate AI voice product value through a clean, conversion-oriented frontend.",
+    role: "Implemented responsive product marketing pages with Next.js.",
+    impact:
+      "Represents delivery of production-facing pages where messaging, polish, and performance matter as much as implementation.",
     tags: [
       {
         name: "nextjs",
@@ -307,7 +302,10 @@ const landingPageProjects = [
   {
     name: "AIHub Landing Page",
     description:
-      "Landing page for AIHub, a platform for AI resources and tools. Highlights offerings and benefits to engage visitors.",
+      "Landing experience for an AI-focused product ecosystem, balancing modern presentation with clear feature communication.",
+    role: "Built the frontend experience used to present product value and user entry points.",
+    impact:
+      "Shows the ability to translate product positioning into a polished web experience, not only an admin-style application UI.",
     tags: [
       {
         name: "nextjs",
@@ -332,7 +330,10 @@ const landingPageProjects = [
   {
     name: "Mobiva Landing Page",
     description:
-      "Landing page for Mobiva Smartcall, a call center solution. Showcases features and benefits to attract potential clients.",
+      "Landing page for Mobiva Smartcall focused on communicating a call-center product clearly to potential customers.",
+    role: "Frontend implementation for a conversion-focused product website.",
+    impact:
+      "Demonstrates responsive layout execution and visual presentation for client-facing product messaging.",
     tags: [
       {
         name: "nextjs",
@@ -349,7 +350,10 @@ const landingPageProjects = [
   {
     name: "Untenshashokuba",
     description:
-      "Landing page for Untensha Shokuba, a Japanese restaurant. Highlights menu, ambiance, and location to entice visitors.",
+      "A Japanese-market landing page project built for clearer presentation, discoverability, and localized product communication.",
+    role: "Delivered responsive landing-page implementation for an external-facing audience.",
+    impact:
+      "Adds evidence of working across different markets and product contexts, not only internal dashboards.",
     tags: [
       {
         name: "wordpress",
@@ -362,7 +366,10 @@ const landingPageProjects = [
   {
     name: "NK Class Portal",
     description:
-      "Classic quiz game inspired by the popular TV show. Test your knowledge, answer trivia questions of increasing difficulty.",
+      "Portal-style frontend connected to the broader ClassNK product experience, with emphasis on clarity and workflow navigation.",
+    role: "Implemented a focused portal experience aligned with the product ecosystem.",
+    impact:
+      "Supports the CV story that I work on business-facing product surfaces, not only isolated toy projects.",
     tags: [
       {
         name: "nextjs",
@@ -382,7 +389,10 @@ const realProjects = [
   {
     name: "Vbee AI Voice",
     description:
-      "AI-powered voice synthesis platform by Vbee. Enables users to create natural-sounding voice content for various applications.",
+      "AI voice-synthesis platform supporting creation workflows, content management, and product-facing user journeys.",
+    role: "Contributed across frontend product experience and backend integrations in a production AI platform.",
+    impact:
+      "Strongest proof of experience building real user-facing AI products rather than portfolio-only demos.",
     tags: [
       {
         name: "nextjs",
@@ -406,7 +416,10 @@ const realProjects = [
   {
     name: "Vbee AI Call",
     description:
-      "AI-powered voice calling platform by Vbee. Enables users to make natural-sounding voice calls for various applications.",
+      "AI calling platform where realtime product behavior, dashboard visibility, and workflow reliability are central.",
+    role: "Worked on product UI, realtime behavior, and supporting backend logic for production usage.",
+    impact:
+      "Shows the combination of frontend ownership and backend problem-solving used in AI product delivery.",
     tags: [
       {
         name: "nextjs",
@@ -430,7 +443,10 @@ const realProjects = [
   {
     name: "ClassNK",
     description:
-      "ClassNK for register exam and manage student information online. Streamlines administrative tasks for educational institutions.",
+      "Exam registration and student-management platform designed to streamline operational workflows for education-focused users.",
+    role: "Led frontend implementation while integrating with a NestJS and MySQL backend.",
+    impact:
+      "Matches the CV narrative around scalable booking and exam systems with stronger ownership over architecture and delivery.",
     tags: [
       {
         name: "nextjs",
@@ -454,7 +470,10 @@ const realProjects = [
   {
     name: "Tobutoptours",
     description:
-      "Booking tours website for Tobu Top Tours. Allows users to browse and book tours easily with a user-friendly interface.",
+      "Tour-booking product focused on reservation flow, customer confidence, and practical frontend usability.",
+    role: "Built booking-oriented frontend flows integrated with a structured backend stack.",
+    impact:
+      "Good evidence of delivering business-critical interfaces where UX clarity directly affects conversion and operations.",
     tags: [
       {
         name: "nextjs",
@@ -515,6 +534,39 @@ const certificate = [
   },
 ];
 
+const projectSections = [
+  {
+    key: "production",
+    title: "Production Platforms",
+    description:
+      "These projects are the strongest evidence of my recent work: production systems where frontend quality, business flow, and technical execution had to hold up in real usage.",
+    items: realProjects,
+  },
+  {
+    key: "marketing",
+    title: "Product and Landing Experiences",
+    description:
+      "This group shows a different side of the same skill set: translating product messaging into polished, responsive web experiences for external users.",
+    items: landingPageProjects,
+  },
+  {
+    key: "personal",
+    title: "Personal Experiments",
+    description:
+      "Smaller personal projects that helped me explore interaction design, state handling, and browser-based product flow outside client work.",
+    items: projects,
+  },
+];
+
+const allProjects = [
+  ...realProjects.map((item) => ({ ...item, group: "Production" })),
+  ...landingPageProjects.map((item) => ({
+    ...item,
+    group: "Landing experience",
+  })),
+  ...projects.map((item) => ({ ...item, group: "Personal experiment" })),
+];
+
 export {
   services,
   technologies,
@@ -523,4 +575,6 @@ export {
   landingPageProjects,
   realProjects,
   certificate,
+  projectSections,
+  allProjects,
 };
