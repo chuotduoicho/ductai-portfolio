@@ -47,7 +47,7 @@ import certnexus from "./certificate/cert-nexus.jpeg";
 import computercommunication from "./certificate/computer-communication.jpeg";
 import startup from "./certificate/startup.jpeg";
 import webdesign from "./certificate/web-design.jpeg";
-import resumePdf from "./Vo-Duc-Tai-TopCV.vn-160426.165339.pdf";
+import resumePdf from "./Vo-Duc-Tai-TopCV.vn-200726.113720.pdf";
 
 export {
   projectmanagement,
