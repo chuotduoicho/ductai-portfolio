@@ -39,27 +39,27 @@ import {
 export const profile = {
   name: "Vo Duc Tai",
   shortName: "Duc Tai",
-  role: "Frontend-focused Full-stack Developer",
+  role: "Full-stack Developer",
   heroHeadline:
-    "Building production products with React, Next.js, and TypeScript.",
+    "Building production products end-to-end — React/Next.js on the frontend, NestJS/Node.js on the backend.",
   heroSubheadline:
-    "4+ years shipping AI, booking, and exam platforms with strong frontend ownership, mentoring, and cross-functional delivery.",
+    "4+ years shipping AI, booking, and exam platforms for Japanese clients, from UI architecture to Kafka/Redis-backed backend systems.",
   summary:
-    "I am a frontend-focused full-stack developer with 4+ years of experience delivering production web applications across AI products, booking systems, and education platforms. My strongest work sits at the intersection of product UI, frontend architecture, and implementation quality, while I keep expanding backend depth with Node.js, NestJS, MongoDB, and MySQL.",
+    "I am a full-stack developer with 4+ years of experience delivering production web applications across AI products, booking systems, and education platforms. My work spans frontend architecture (React, Next.js, TypeScript) and backend systems (NestJS, PostgreSQL, Redis, Kafka, event-driven processing), and I'm growing toward a Bridge Engineer role connecting Japanese clients with development teams.",
   details:
-    "Recent work has included leading frontend decisions with React, Next.js, TypeScript, Tailwind CSS, and SWR, mentoring teammates, and collaborating directly with business analysts and Japanese clients to turn business requirements into maintainable product flows.",
+    "Recent work has included designing full-stack features for Japanese client systems — React/Next.js frontends backed by NestJS/PostgreSQL services — plus event-driven backend work (Kafka, Redis distributed locks, queue processing) on AI platforms, mentoring teammates, and collaborating directly with business analysts and Japanese clients to turn business requirements into maintainable product flows.",
   quickFacts: [
     {
       value: "4+ years",
       label: "building production web applications",
     },
     {
-      value: "React, Next.js, TypeScript",
-      label: "core frontend delivery stack",
+      value: "React, Next.js, NestJS",
+      label: "core full-stack delivery",
     },
     {
-      value: "Mentoring",
-      label: "interns and junior developers",
+      value: "Kafka, Redis, PostgreSQL",
+      label: "backend & distributed systems",
     },
     {
       value: "Client-facing",
@@ -67,9 +67,9 @@ export const profile = {
     },
   ],
   focusAreas: [
-    "Frontend architecture",
-    "Product UI and UX execution",
     "Full-stack delivery",
+    "Backend & distributed systems",
+    "Product UI and UX execution",
     "Mentoring and team collaboration",
   ],
   contact: {
@@ -103,15 +103,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Architecture",
+    title: "Full-stack Product Delivery",
     icon: web,
   },
   {
-    title: "React and Next.js Delivery",
+    title: "React and Next.js Frontend",
     icon: mobile,
   },
   {
-    title: "Full-stack Product Implementation",
+    title: "Backend & Distributed Systems",
     icon: backend,
   },
   {
@@ -173,37 +173,53 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend-focused Full-stack Developer",
+    title: "Full-stack Developer",
     company_name: "Vbee",
     icon: vbee,
     iconBg: "rgb(239 238 192)",
     date: "September 2022 - April 2024",
     focus:
-      "Owned dashboard-heavy product work across AI voice and AI calling systems, balancing frontend experience, realtime visualization, and backend integrations.",
-    stack: ["React", "Redux Saga", "WebSocket", "Node.js", "MongoDB"],
+      "Built AI voice and AI calling platforms end-to-end — React/Redux frontend paired with Node.js backend services using Kafka for event streaming and Redis for caching, rate limiting, and distributed locking.",
+    stack: [
+      "React",
+      "Redux Saga",
+      "WebSocket",
+      "Node.js",
+      "Kafka",
+      "Redis",
+      "MongoDB",
+    ],
     points: [
-      "Built AI-driven dashboards using ReactJS, Redux Saga, and WebSocket for real-time data visualization.",
-      "Developed backend logic with Node.js, including cron jobs, API integration, and data processing.",
-      "Led UI/UX optimization across desktop and mobile platforms to enhance user experience.",
-      "Mentored interns, enforced Git workflows, and promoted clean code practices within the team.",
-      "Collaborated with cross-functional teams to align technical solutions with business goals.",
+      "Developed AI-powered platforms (AI Voice, AI Call Center) end-to-end: React/Redux frontend plus Node.js backend services using Kafka for event streaming and Redis for caching/rate limiting.",
+      "Implemented real-time features with Socket.IO/WebSocket for live call status and audio processing feedback.",
+      "Built and maintained backend cron jobs and queue-based workers for automated campaign processing, including handling concurrency issues (duplicate call assignment, stuck/zombie jobs).",
+      "Built dynamic dashboards and reusable UI components to support flexible call flows and large-scale usage.",
+      "Collaborated with cross-functional teams (PM, QA, backend) in agile development.",
     ],
   },
   {
-    title: "Frontend-focused Full-stack Developer",
+    title: "Full-stack Developer",
     company_name: "Wasabi",
     icon: wasabi,
     iconBg: "#e6ff9e",
-    date: "June 2024 - Present",
+    date: "May 2024 - Present",
     focus:
-      "Leading frontend implementation for booking and exam-registration products with stronger ownership over architecture, code quality, and stakeholder communication.",
-    stack: ["Next.js 19", "React 19", "TypeScript", "SWR", "Tailwind CSS"],
+      "Developing full-stack features for Japanese client systems — Next.js/React frontends backed by NestJS/PostgreSQL services — with growing ownership over architecture, code quality, and stakeholder communication.",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "NestJS",
+      "PostgreSQL",
+      "Redis",
+      "SWR",
+    ],
     points: [
-      "Led frontend architecture using Next.js, React 19, SWR, and Tailwind CSS.",
-      "Developed scalable booking and exam registration systems with strong UI/UX emphasis.",
-      "Integrated backend APIs and handled data flow using TypeScript and SWR.",
-      "Collaborated with Japanese clients and BAs to align technical solutions with business needs.",
-      "Mentored junior developers and contributed to team growth and code quality.",
+      "Developed full-stack features for Japanese client systems (exam registration, booking platforms) — Next.js/React on the frontend, NestJS/PostgreSQL on the backend.",
+      "Designed reusable component architecture and optimized performance (lazy loading, caching, SWR) to improve responsiveness and maintainability.",
+      "Built and integrated RESTful APIs for reporting, user management, and PDF certificate generation, including debugging backend data and query issues.",
+      "Collaborated with BA, backend, and QA teams in an agile environment, aligning technical solutions with business requirements.",
+      "Mentored junior developers, conducted code reviews, and contributed to improving overall team productivity.",
     ],
   },
 ];
@@ -389,10 +405,10 @@ const realProjects = [
   {
     name: "Vbee AI Voice",
     description:
-      "AI voice-synthesis platform supporting creation workflows, content management, and product-facing user journeys.",
-    role: "Contributed across frontend product experience and backend integrations in a production AI platform.",
+      "Text-to-speech platform by Vbee. Redis cache keyed by content hash to reuse generated audio, queue-based generation, and streaming output to fix OOM crashes on large audio files.",
+    role: "Owned both the generation UI and the backend caching/queue architecture in a production AI platform.",
     impact:
-      "Strongest proof of experience building real user-facing AI products rather than portfolio-only demos.",
+      "Strongest proof of experience building real user-facing AI products end-to-end, not only frontend demos.",
     tags: [
       {
         name: "nextjs",
@@ -407,7 +423,7 @@ const realProjects = [
         color: "pink-text-gradient",
       },
       {
-        name: "mui",
+        name: "redis",
         color: "orange-text-gradient",
       },
     ],
@@ -416,10 +432,10 @@ const realProjects = [
   {
     name: "Vbee AI Call",
     description:
-      "AI calling platform where realtime product behavior, dashboard visibility, and workflow reliability are central.",
-    role: "Worked on product UI, realtime behavior, and supporting backend logic for production usage.",
+      "AI-powered outbound call center platform. Event-driven backend with Kafka and Socket.IO, atomic upsert to prevent duplicate call assignment across workers, and a Redis distributed lock against cache stampede.",
+    role: "Worked on the product dashboard UI plus the concurrency-safe backend logic (Kafka events, distributed locking) for production usage.",
     impact:
-      "Shows the combination of frontend ownership and backend problem-solving used in AI product delivery.",
+      "Shows the combination of frontend ownership and hands-on backend problem-solving under real concurrency constraints.",
     tags: [
       {
         name: "nextjs",
@@ -430,12 +446,16 @@ const realProjects = [
         color: "green-text-gradient",
       },
       {
-        name: "node",
+        name: "kafka",
         color: "pink-text-gradient",
       },
       {
-        name: "mui",
+        name: "socketio",
         color: "orange-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "yellow-text-gradient",
       },
     ],
     image: aicall,
@@ -443,10 +463,10 @@ const realProjects = [
   {
     name: "ClassNK",
     description:
-      "Exam registration and student-management platform designed to streamline operational workflows for education-focused users.",
-    role: "Led frontend implementation while integrating with a NestJS and MySQL backend.",
+      "Examination registration system for ClassNK (Japan Maritime Association). Streaming/background-job report export for large datasets, Redis caching, and a fix for Japanese-character PDF certificate rendering.",
+    role: "Developed both frontend and backend (NestJS/PostgreSQL) for the exam registration and reporting flows.",
     impact:
-      "Matches the CV narrative around scalable booking and exam systems with stronger ownership over architecture and delivery.",
+      "Matches the CV narrative around full-stack ownership of a production booking/exam system, including backend performance fixes.",
     tags: [
       {
         name: "nextjs",
@@ -461,8 +481,12 @@ const realProjects = [
         color: "pink-text-gradient",
       },
       {
-        name: "mysql",
+        name: "postgresql",
         color: "orange-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "yellow-text-gradient",
       },
     ],
     image: classnk,
@@ -470,10 +494,10 @@ const realProjects = [
   {
     name: "Tobutoptours",
     description:
-      "Tour-booking product focused on reservation flow, customer confidence, and practical frontend usability.",
-    role: "Built booking-oriented frontend flows integrated with a structured backend stack.",
+      "Scheduling & booking system for Tobu, used by healthcare staff in Japan. Booking lifecycle modeled as an explicit state machine, with all date handling normalized to UTC to fix a cross-timezone display bug.",
+    role: "Built booking-oriented frontend flows and the backend state machine / timezone handling behind them.",
     impact:
-      "Good evidence of delivering business-critical interfaces where UX clarity directly affects conversion and operations.",
+      "Good evidence of full-stack ownership on a business-critical interface where both UX clarity and backend correctness matter.",
     tags: [
       {
         name: "nextjs",
@@ -488,7 +512,7 @@ const realProjects = [
         color: "pink-text-gradient",
       },
       {
-        name: "mysql",
+        name: "postgresql",
         color: "orange-text-gradient",
       },
     ],

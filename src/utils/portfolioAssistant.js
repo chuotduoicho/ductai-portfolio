@@ -85,7 +85,7 @@ const buildRecruiterGuide = (message) => {
   }
 
   if (hasKeyword(message, ["backend", "node", "api", "database"])) {
-    return `For backend and system thinking, check ${sectionLinks.experience} first, then look at production projects in ${sectionLinks.projects} where Node.js, NestJS, MongoDB, and MySQL appear.`;
+    return `For backend and system thinking, check ${sectionLinks.experience} first, then look at production projects in ${sectionLinks.projects} where Node.js, NestJS, PostgreSQL, Redis, and Kafka appear.`;
   }
 
   if (hasKeyword(message, ["lead", "mentor", "management", "team"])) {
