@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "ductai-porfolio"
-  }
+  },
+  "targets": {
+    "ductai-porfolio": {
+      "hosting": {
+        "portfolio": [
+          "vdtai-portfolio"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
