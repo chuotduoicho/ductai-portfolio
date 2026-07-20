@@ -19,6 +19,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.svg";
+import nestjs from "./tech/nestjs.svg";
+import kafka from "./tech/kafka.svg";
+import redis from "./tech/redis.svg";
+import postgresql from "./tech/postgresql.svg";
+import socketio from "./tech/socketio.svg";
 
 import wasabi from "./company/wasabi.png";
 import vbee from "./company/vbee.png";
@@ -70,6 +76,12 @@ export {
   tailwind,
   typescript,
   threejs,
+  nextjs,
+  nestjs,
+  kafka,
+  redis,
+  postgresql,
+  socketio,
   wasabi,
   vbee,
   ailatrieuphu,

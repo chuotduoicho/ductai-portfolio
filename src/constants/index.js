@@ -17,6 +17,12 @@ import {
   vbee,
   wasabi,
   threejs,
+  nextjs,
+  nestjs,
+  kafka,
+  redis,
+  postgresql,
+  socketio,
   ailatrieuphu,
   oantuti,
   quiz,
@@ -156,6 +162,30 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: "NestJS",
+    icon: nestjs,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "Kafka",
+    icon: kafka,
+  },
+  {
+    name: "Socket.IO",
+    icon: socketio,
   },
   {
     name: "Three JS",
